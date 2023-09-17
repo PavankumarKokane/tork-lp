@@ -1,0 +1,116 @@
+.slick-dots li button::before{
+    color:#FFE2E5 !important;
+    font-size: 1.3rem !important;
+    opacity: 1 !important;
+}
+.slick-dots{
+    bottom: 70px !important;
+    text-align: left !important;
+    left: 20%;
+}
+.slick-dots li.slick-active button::before{
+    color: #CD001A !important;
+    // width: 1.5rem !important;
+    // height: 1.5rem !important;
+    background-color: #CD001A;
+    border-radius: 50%;
+    font-size: 1.1rem;
+}
+@include breakpoint-down(small){
+    .slick-dots{
+        bottom: 50px !important;
+        text-align: center !important;
+        left: 0;
+    }
+}
+
+
+
+
+// *********************************** Services SECTION **************************************************
+
+
+.service-sec{
+    .slick-slider {
+      margin-left: -12%;
+      margin-right: -12%;
+    }
+    
+    .slick-list {
+      padding-top: 10%!important;
+      padding-bottom: 10%!important;
+      padding-left: 15%!important;
+      padding-right: 15%!important;
+    }
+    
+    .slick-dots {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    .slick-track {
+      max-width: 100%!important;
+      transform: translate3d(0, 0, 0)!important;
+      perspective: 100px;
+    }
+    
+    .slick-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: 0;
+      width: 100%!important;
+      transform: translate3d(0, 0, 0);
+      transition: transform 1s, opacity 1s;
+    }
+    
+    .slick-snext,
+    .slick-sprev,
+    .slick-snext2,
+    .slick-sprev2{
+      display: block;
+    }
+    
+    .slick-current {
+      opacity: 1;
+      position: relative;
+      display: block;
+      z-index: 2;
+    }
+    
+    .slick-snext {
+      opacity: 1;
+      transform: translate3d(10%, 0, -10px);
+      z-index: 1;
+      perspective: 1000px;
+    }
+    .slick-snext2 {
+      opacity: 1;
+      transform: translate3d(20%, 0, -20px);
+      z-index: 0;
+      perspective: 1000px;
+    }
+    
+    .slick-sprev {
+      opacity: 1;
+      transform: translate3d(-10%, 0, -10px);
+    }
+    
+    .slick-sprev2 {
+      opacity: 1;
+      transform: translate3d(-20%, 0, -20px);
+    }
+    .slick-slider{
+      margin-bottom: 10%;
+    }
+    .slick-list{
+      padding: 0% 15% !important;
+    }
+  }
+  

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Tork Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+</head>
+<body>
+<header>
+ <div class="container">
+    <div class="row">
+      <div class="nav-bar">
+        <div>
+          <img src="dist/assets/images/header-logo.svg" height="33" width="120" alt="Header Logo">
+        </div>
+        <div class="btn-img-div">
+          <img src="dist/assets/images/made-in-india.png" height="27" width="140" alt="Made In India">
+          <a href="javascript:;" class="book-now-btn">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+ </div>
+</header>
+<section>
+      <div class="banner-mobile">
+      <h2 class="banner-title">BORN ON THE <br>RACE TRACK <span>UNLEASHED ON <br>THE STREETS</span></h2>
+    </div>
+    <div class="main-color-div visible-xs">
+      <p class="color-text">AVAILABLE IN 4 COLOURS</p>
+      <div class="slide-banner">
+                <div class="list-index first current-slide"><a data-slide="1" href="javascript:;"></a></div>
+                <div class="list-index sec"><a data-slide="2" href="javascript:;"></a></div>
+                <div class="list-index thrd"><a data-slide="3" href="javascript:;"></a></div>
+                <div class="list-index four"><a data-slide="4" href="javascript:;"></a></div>
+            </div>
+    </div>
+      <div class="banner-slider">
+        <div class="white">
+          <picture>
+            <source media="(max-width:990px)" srcset="dist/assets/images/banner1-mb.webp">
+            <img src="dist/assets/images/banner1.webp" alt="Banner 1">
+          </picture>
+        </div>
+        <div class="black">
+          <picture>
+            <source media="(max-width:990px)" srcset="dist/assets/images/banner2-mb.webp">
+            <img loading="lazy" src="dist/assets/images/banner2.webp" alt="Banner 2">
+          </picture>
+        </div>
+        <div class="red">
+          <picture>
+            <source media="(max-width:990px)" srcset="dist/assets/images/banner3-mb.webp">
+            <img loading="lazy" src="dist/assets/images/banner3.webp" alt="Banner 3">
+          </picture>
+        </div>
+        <div class="blue">
+          <picture>
+            <source media="(max-width:990px)" srcset="dist/assets/images/banner4-mb.webp">
+            <img loading="lazy" src="dist/assets/images/banner4.webp" alt="Banner 4">
+          </picture>
+        </div>
+      </div>
+    <div class="form-main-div">
+      <div class="container pos-rel">
+        <div>
+          <div class="banner-title-div">
+            <h2 class="banner-title">BORN ON THE <br>RACE TRACK <span>UNLEASHED ON <br>THE STREETS</span></h2>
+          </div>
+          <div class="main-color-div hidden-xs">
+            <p class="color-text">AVAILABLE IN 4 COLOURS</p>
+            <div class="slide-banner">
+                        <div class="list-index first current-slide"><a data-slide="1" href="javascript:;"></a></div>
+                        <div class="list-index sec"><a data-slide="2" href="javascript:;"></a></div>
+                        <div class="list-index thrd"><a data-slide="3" href="javascript:;"></a></div>
+                        <div class="list-index four"><a data-slide="4" href="javascript:;"></a></div>
+                    </div>
+          </div>
+        </div>
+                <div class="form-div-banner">
+                  <div class="swipe-title">                    
+              <div class="swipe-up-text">
+                  <p>SWIPE UP TO BOOK NOW</p>
+              </div>
+              <div class="mobile-swipe-up">
+                  <span> </span>
+              </div>
+              <h3>Book Now @ Rs 999/- <span class="refundable">(fully refundable)</span></h3>
+          </div>
+
+                    <div class="col-l-5 form-checkout-div" id="form-mobile-id">
+                      <h3>Book Now @ Rs 999/- <span class="refundable">(fully refundable)</span></h3>
+                      <form id="form1" class="form-checkout">
+                        <input type="text" placeholder="First Name *" class="input-fields alpha-only" name="firstname" required>
+                        <input type="text" placeholder="Last Name *" class="input-fields alpha-only" name="lastname" required>
+                        <input type="tel" placeholder="Phone Number*" class="input-fields numeric-only" name="mobileno" required>
+                        <input type="email" placeholder="Email Address*" class="input-fields" name="email" required>
+                        <input type="text" placeholder="Address*" class="input-fields" name="address" required>
+                        <input type="number" placeholder="Pin Code*" class="input-fields pin-only" name="pincode" required>
+                        <label class="checkbox" for="createaccount">By continuing you agree to our&nbsp;Terms of Use </label>
+                        <input type="submit" class="register-btn" value="Register">
+                      </form>
+                      <p class="form-sub"></p>
+                    </div>
+                </div>
+      </div>
+    </div>
+</section>
+<div class="kratos-r-div">
+  <div class="container">
+    <div class="kratos-r-main-div">
+      <div>
+        <picture>
+          <source media="(max-width:767px)" srcset="dist/assets/images/kratos-r-mb.png">
+          <img class="kratos-r-img" src="dist/assets/images/kratos-r.png" alt="Kratos R" width="199" height="91">
+        </picture>
+      </div>
+      <div class="kratos-r-info">
+        <div>
+          <p class="small-letter">TOP<br>SPEED</p>
+          <p class="sec-letter"><span>105</span><br>kmph</p>
+        </div>
+        <div>
+          <p class="small-letter">RANGE</p>
+          <p class="sec-letter"><span>180</span><sup>*</sup><br>km</p>
+        </div>
+        <div>
+          <p class="small-letter">FAST<br>CHARGE</p>
+          <p class="sec-letter"><span>60</span><sup>*</sup><br>mins</p>
+        </div>
+        <div>
+          <p class="small-letter">0-40<br>kmph</p>
+          <p class="sec-letter"><span>3.5</span><br>secs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="visible-xs">
+    <img class="kratos-r-img" src="dist/assets/images/white-kratos-r.png" alt="White Kratos R" width="309" height="258">
+  </div>
+</div>
+<section class="owners-experience-sec" id="owners-experience">
+  <div class="container">
+    <div class="row">
+      <div class="owners-experience-div">
+        <div>
+          <h2 class="sec-title">Proud Kratos owners share <br class="hidden-xs">their riding experience </h2>
+        </div>
+        <div class="owners-img-gallery owners-gallery-slider">
+          <div>
+            <div data-aos="fade-up" class="pos-rel">
+              <img class="owner-img" loading="lazy" src="dist/assets/images/owner-1.png" height="317" width="260" alt="Owner 1">
+              <div class="biking-community-play">
+                <div>
+                  <a data-fancybox href="https://youtube.com/embed/cVHb_LYurBY" target="_blank"><img loading="lazy" src="dist/assets/images/play-btn.png" height="45" width="45" alt="Play Button"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec-owner-div">
+            <div data-aos="fade-up" class="pos-rel">
+              <img class="owner-img" loading="lazy" src="dist/assets/images/owner-2.png" height="317" width="260" alt="Owner 2">
+              <div class="biking-community-play">
+                <div>
+                  <a data-fancybox href="https://www.youtube.com/embed/gpHaAwVxQKc" target="_blank"><img loading="lazy" src="dist/assets/images/play-btn.png" height="45" width="45" alt="Play Button"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div data-aos="fade-up" class="pos-rel">
+              <img class="owner-img" loading="lazy" src="dist/assets/images/owner-3.png" height="317" width="260" alt="Owner 3">
+              <div class="biking-community-play">
+                <div>
+                  <a data-fancybox href="https://youtube.com/embed/YBdNN88gF7k" target="_blank"><img loading="lazy" src="dist/assets/images/play-btn.png" height="45" width="45" alt="Play Button"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrows-div visible-xs">
+          <div class="owners-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Group_91389" data-name="Group 91389" width="42" height="42.875" viewBox="0 0 42 42.875"><style>#Group_91389:hover #Path_67617{fill:#3cb3e6;}</style><path id="Path_67617" data-name="Path 67617" d="M21,0A21.222,21.222,0,0,1,42,21.438,21.222,21.222,0,0,1,21,42.875,21.222,21.222,0,0,1,0,21.438,21.222,21.222,0,0,1,21,0Z" fill="#1a1d20"/><g id="Group_91353" data-name="Group 91353" transform="translate(11.634 11.93)"><path id="Path_67612" data-name="Path 67612" d="M27.4,30.8,18,21.4,27.4,12" transform="translate(-18 -12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path id="Path_67613" data-name="Path 67613" d="M30.8,18H12" transform="translate(-12 -8.599)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></svg>
+          </div>
+          <div class="owners-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42.875" viewBox="0 0 42 42.875"><style>#Group_91387:hover #Ellipse_1349{fill:#3cb3e6;}</style><g id="Group_91387" data-name="Group 91387" transform="translate(-0.236 0.322)"><ellipse id="Ellipse_1349" data-name="Ellipse 1349" cx="21" cy="21.438" rx="21" ry="21.438" transform="translate(0.236 -0.322)" fill="#1a1d20"/><g id="Group_91353" data-name="Group 91353" transform="translate(11.8 11.609)"><path id="Path_67612" data-name="Path 67612" d="M18,30.8l9.4-9.4L18,12" transform="translate(-8.6 -12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path id="Path_67613" data-name="Path 67613" d="M12,18H30.8" transform="translate(-12 -8.599)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></g></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="padding service-crew-sec" id="service-crew">
+  <div class="container">
+    <div class="row">
+      <div class="service-crew-div">
+        <div>
+          <h2 class="sec-title">Service <br>at your doorstep</h2>
+          <div class="service-img-div visible-xs">
+            <img loading="lazy" src="dist/assets/images/service-crew.jpg" height="396" width="720" alt="Service crew">
+            <div class="service-play">
+              <div>
+                <a data-fancybox href="https://www.youtube.com/embed/pCyvLk7R0sM" target="_blank"><img loading="lazy" src="dist/assets/images/play-btn.png" height="45" width="45" alt="Play Button">
+                <p>PLAY VIDEO</p></a>
+              </div>
+            </div>
+          </div>
+          <ul class="service-points">
+            <li>Buy your bike from the makers</li>
+            <li>We’ll deliver it to your doorstep</li>
+            <li>We’ll service it at the door</li>
+            <li>Citywide coverage</li>
+          </ul>
+        </div>
+        <div class="service-img-div hidden-xs">
+          <img loading="lazy" src="dist/assets/images/service-crew.jpg" height="396" width="720" alt="Service crew">
+          <div class="service-play">
+            <div>
+              <a data-fancybox href="https://www.youtube.com/embed/pCyvLk7R0sM" target="_blank"><img loading="lazy" src="dist/assets/images/play-btn.png" height="45" width="45" alt="Play Button">
+              <p>PLAY VIDEO</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="biking-community-sec" id="biking community">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h2 class="sec-title">Don’t believe us?</h2>
+        <h3 class="sec-title">Take it from the OGs of the biking community</h3>
+      </div>
+      <div class="videos-sec">
+        <div>
+          <div class="biking-community-img-div" data-aos="zoom-in" data-aos-duration="1000">
+            <img loading="lazy" src="dist/assets/images/meet-the-leaders.jpg" height="400" width="536" alt="Meet The Leaders">
+            <div class="biking-community-play">
+              <div>
+                <a data-fancybox href="https://www.youtube.com/embed/TuRqeoUDCsY?start=18" target="_blank"><img loading="lazy" src="dist/assets/images/play-btn.png" height="45" width="45" alt="Play Button">
+                <p>PLAY VIDEO</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="biking-community-img-div" data-aos="zoom-in" data-aos-duration="1000">
+            <img loading="lazy" src="dist/assets/images/beast-got-unleashed.jpg" height="400" width="536" alt="Beast Got Unleashed!">
+            <div class="biking-community-play">
+              <div>
+                <a data-fancybox href="https://www.youtube.com/embed/XbbIBlVRHoA" target="_blank"><img loading="lazy" src="dist/assets/images/play-btn.png" height="45" width="45" alt="Play Button">
+                <p>PLAY VIDEO</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="padding experience-sec" id="experience">
+  <div class="list-points-div">
+
+
+    <div>
+    <div class="list-points1 first-div-img-bk">
+      <div>
+        <div class="img-zoom-box first-img-box" >
+          <picture class="hidden-xs">
+            <source media="(max-width:767px)" srcset="dist/assets/images/loaded-features-mb.png">
+            <img loading="lazy" src="dist/assets/images/loaded-features.png" height="444" width="444" alt="Loaded Features">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h2 class="sec-title">Experience the speed, <br class="hidden-xs">the power, and all things Tork!</h2>
+        <h3 class="sub-title"><span>Loaded with features</span> That power your every ride</h3>
+        <img loading="lazy" class="visible-xs mg-tp-20 mg-bt-20" src="dist/assets/images/loaded-features-mb.png" height="217" width="335" alt="Loaded Features">
+        <ul class="list-points-dec">
+          <li>High-speed electric bike up to 105 km/ph</li>
+          <li>Long-range of 180 km in one charge</li>
+          <li>Powerful performance - 38 Nm torque</li>
+          <li>3-year bike and battery warranty</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    
+    <div>
+    <div class="list-points2">
+      <div>
+        <div class="img-zoom-box">
+          <picture class="hidden-xs">
+            <source media="(max-width:767px)" srcset="dist/assets/images/dash-charging-mb.png">
+            <img loading="lazy" src="dist/assets/images/dash-charging.png" height="444" width="444" alt="Dash Charging">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub-title"><span>Fast charging</span> Charges at a lightning</br class="hidden-xs">fast speed</h3>
+        <img loading="lazy" class="visible-xs mg-tp-20 mg-bt-20" src="dist/assets/images/dash-charging-mb.png" height="217" width="335" alt="Dash Charging">
+        <ul class="list-points-dec">
+          <li>Charges 80% in 1 hour</li>
+          <li>USB charging</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div>
+    <div class="list-points1">
+      <div>
+        <div class="img-zoom-box">
+          <picture class="hidden-xs">
+            <source media="(max-width:767px)" srcset="dist/assets/images/safest-batteries-mb.png">
+            <img loading="lazy" src="dist/assets/images/safest-batteries.png" height="444" width="444" alt="Safest Batteries">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub-title"><span>Safest batteries</span>  Designed for Indian roads &</br class="hidden-xs"> weather conditions</h3>
+        <img loading="lazy" class="visible-xs mg-tp-20 mg-bt-20" src="dist/assets/images/safest-batteries-mb.png" height="217" width="335" alt="Safest Batteries">
+        <ul class="list-points-dec">
+          <li>High-energy density with optimum cooling</li>
+          <li>IP67-rated for extreme water & dust protection</li>
+          <li>Backed by a proprietary battery management system</li>
+          <li>Sealed with an aluminium HPDC box</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div>
+    <div class="list-points2">
+      <div>
+        <div class="img-zoom-box">
+          <picture class="hidden-xs">
+            <source media="(max-width:767px)" srcset="dist/assets/images/Irresistible-style-mb.png">
+            <img loading="lazy" src="dist/assets/images/Irresistible-style.png" height="444" width="444" alt="Irresistible Style">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub-title"><span>Irresistible style</span> You can’t take your eyes off</h3>
+        <img loading="lazy" class="visible-xs mg-tp-20 mg-bt-20" src="dist/assets/images/Irresistible-style-mb.png" height="217" width="335" alt="Irresistible Style">
+        <ul class="list-points-dec">
+          <li>The only full-sized electric motorcycle on the road</li>
+          <li>Sporty looks</li>
+          <li>Vibrant and youthful colours</li>
+          <li>A triangular-shaped headlight</li>
+          <li>Split-type seat</li>
+          <li>Fully-digital instrument cluster</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div>
+    <div class="list-points1">
+      <div>
+        <div class="img-zoom-box">
+          <picture class="hidden-xs">
+            <source media="(max-width:767px)" srcset="dist/assets/images/getting-better-mb.png">
+            <img loading="lazy" src="dist/assets/images/getting-better.png" height="444" width="444" alt="Getting Better">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub-title"><span>That’s not all!</span> It keeps getting better</h3>
+        <img loading="lazy" class="visible-xs mg-tp-20 mg-bt-20" src="dist/assets/images/getting-better-mb.png" height="217" width="335" alt="Getting Better">
+        <ul class="list-points-dec">
+          <li>Multiple ride modes</li>
+          <li>One-touch reverse gear</li>
+          <li>Spacious front storage box (6 litres)</li>
+          <li>Proprietary hazard lights </li>
+          <li>Side stand indicators </li>
+          <li>Anti-theft & Crash alert</li>
+          <li></li>
+          <li>Live Dash for real-time updates on battery, range etc.</li>
+          <li>Google maps navigation with Live Dash</li>
+          <li>Service crew at your doorstep</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <div class="list-points-arrow">
+      <span class="next-button-svg" style="display: block;">
+        <svg class="list-points-button-next" xmlns="http://www.w3.org/2000/svg" width="34.875" height="34.875" viewBox="0 0 34.875 34.875">
+        <path id="Icon_awesome-arrow-alt-circle-right" data-name="Icon awesome-arrow-alt-circle-right" d="M18,.563A17.438,17.438,0,1,1,.563,18,17.434,17.434,0,0,1,18,.563ZM9.844,21.094H18v4.985a.844.844,0,0,0,1.441.6L27.478,18.6a.836.836,0,0,0,0-1.188L19.441,9.323a.844.844,0,0,0-1.441.6v4.985H9.844A.846.846,0,0,0,9,15.75v4.5A.846.846,0,0,0,9.844,21.094Z" transform="translate(-0.563 -0.563)" fill="#bdd630"/>
+      </svg>
+      </span>
+      <span class="prev-button-svg" style="display: none;">
+        <svg class="list-points-button-prev" style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="34.875" height="34.875" viewBox="0 0 34.875 34.875">
+        <path id="Icon_awesome-arrow-alt-circle-right" data-name="Icon awesome-arrow-alt-circle-right" d="M18,.563A17.438,17.438,0,1,1,.563,18,17.434,17.434,0,0,1,18,.563ZM9.844,21.094H18v4.985a.844.844,0,0,0,1.441.6L27.478,18.6a.836.836,0,0,0,0-1.188L19.441,9.323a.844.844,0,0,0-1.441.6v4.985H9.844A.846.846,0,0,0,9,15.75v4.5A.846.846,0,0,0,9.844,21.094Z" transform="translate(-0.563 -0.563)" fill="#bdd630"/>
+      </svg>
+      </span>
+  </div>
+</section>
+<section class="media-sec" id="media">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h2 class="sec-title">Kratos User Ratings</h2>
+      </div>
+      <div class="pos-rel">
+        <div class="media-slider">
+
+          <div class="media-points">
+            <div class="media-points-img-div">
+              <img loading="lazy" src="dist/assets/images/zigwheels.png" width="160" height="19" alt="ZigWheels">
+            </div>
+            <div>
+              <div class="rating-div">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star-half.svg" height="25" width="28" alt="star">
+              </div>
+              <p>4.4/5</p>
+            </div>
+          </div>
+
+          <div class="media-points">
+            <div class="media-points-img-div">
+              <img loading="lazy" src="dist/assets/images/bikewale.png" width="160" height="19" alt="BikeWale">
+            </div>
+            <div>
+              <div class="rating-div">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star-half.svg" height="25" width="28" alt="star">
+              </div>
+              <p>4.5/5</p>
+            </div>
+          </div>
+
+          <div class="media-points">
+            <div class="media-points-img-div">
+              <img loading="lazy" src="dist/assets/images/bikedekho.png" width="160" height="19" alt="BikeDekho">
+            </div>
+            <div>
+              <div class="rating-div">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star.svg" height="25" width="28" alt="star">
+                <img loading="lazy" src="dist/assets/images/ionic-md-star-half.svg" height="25" width="28" alt="star">
+              </div>
+              <p>4.3/5</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="arrows-div visible-xs">
+          <div class="button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Group_91389" data-name="Group 91389" width="42" height="42.875" viewBox="0 0 42 42.875"><style>#Group_91389:hover #Path_67617{fill:#3cb3e6;}</style><path id="Path_67617" data-name="Path 67617" d="M21,0A21.222,21.222,0,0,1,42,21.438,21.222,21.222,0,0,1,21,42.875,21.222,21.222,0,0,1,0,21.438,21.222,21.222,0,0,1,21,0Z" fill="#1a1d20"/><g id="Group_91353" data-name="Group 91353" transform="translate(11.634 11.93)"><path id="Path_67612" data-name="Path 67612" d="M27.4,30.8,18,21.4,27.4,12" transform="translate(-18 -12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path id="Path_67613" data-name="Path 67613" d="M30.8,18H12" transform="translate(-12 -8.599)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></svg>
+          </div>
+          <div class="button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42.875" viewBox="0 0 42 42.875"><style>#Group_91387:hover #Ellipse_1349{fill:#3cb3e6;}</style><g id="Group_91387" data-name="Group 91387" transform="translate(-0.236 0.322)"><ellipse id="Ellipse_1349" data-name="Ellipse 1349" cx="21" cy="21.438" rx="21" ry="21.438" transform="translate(0.236 -0.322)" fill="#1a1d20"/><g id="Group_91353" data-name="Group 91353" transform="translate(11.8 11.609)"><path id="Path_67612" data-name="Path 67612" d="M18,30.8l9.4-9.4L18,12" transform="translate(-8.6 -12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path id="Path_67613" data-name="Path 67613" d="M12,18H30.8" transform="translate(-12 -8.599)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></g></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="legend-behind-tork-sec" id="legend-behind">
+  <div class="container">
+    <div class="row">
+      <div class="legend-behind-div">
+        <div class="heading-div">
+          <h2 class="sec-title">The legend behind <br class="hidden-xs">Tork Motors</h2>
+          <div>
+            <p class="sec-dec">Driven by the passion for motorcycles and cars, the Founder and CEO of Tork Motors, Kapil Shelke, was determined to create India's first electric motorcycle. That’s how the Tork Kratos came into being. It was specially designed keeping in mind the Indian roads and weather conditions.</p>
+            <p class="decs"><strong>This racing marvel is now unleashed on the streets!</strong></p>
+            <div>
+              <a href="javascript:;" class="book-line scroll-sec" rel="form-mobile-id">BOOK YOUR KRATOS NOW FOR RS. 999/-*  <svg xmlns="http://www.w3.org/2000/svg" width="17.877" height="13.43" viewBox="0 0 17.877 13.43"><g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(10.031 1.768)"><path id="Path_67615" data-name="Path 67615" d="M7.5,18H22.877" transform="translate(-16.281 -13.053)" fill="none" stroke="#3cb3e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/><path id="Path_67616" data-name="Path 67616" d="M7.5,17.395l4.947-4.947L7.5,7.5" transform="translate(-5.852 -7.5)" fill="none" stroke="#3cb3e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></g></svg></a>
+              <p class="sec-dec">(Fully Refundable)</p>
+            </div>
+          </div>
+        </div>
+        <div class="pos-rel" data-aos="fade-up">
+          <img loading="lazy" class="behind-img" src="dist/assets/images/behind-tork.jpg" height="170" width="270" alt="Behind Tork">
+          <div class="biking-community-play">
+            <div>
+              <a data-fancybox href="https://www.youtube.com/embed/s88S2HnUfoA" target="_blank"><img loading="lazy" src="dist/assets/images/play-btn.png" height="45" width="45" alt="Play Button"><p>PLAY VIDEO</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="padding questions-sec" id="questions">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h2 class="sec-title">Got questions? <br class="hidden-xs">We’ve got you covered!</h2>
+      </div>
+      <div class="accordion_faq">
+                <div class="set set-1" id="s-1">
+                  <a href="javascript:;" class="active panel" rel="s-1"  data-event-category="Section" data-event-action="Click" data-event-name="FAQs"> How do I book the Kratos? </a>
+                  <div class="content" style="display:block">
+                    <p>To book the Kratos, you must first register your details on our website. After creating an account, you must pay a refundable booking amount (₹999) to secure your spot. Our team will contact you to answer any queries and inform you about further processes. This amount will be adjusted in the total on-road price of the bike. Your payment is transferred to Tork Motors through a fully-secured payment gateway. </p>
+                  </div>
+                </div>
+                <div class="set s-2" id="s-2">
+                  <a href="javascript:;" class="panel" rel="s-2"  data-event-category="Section" data-event-action="Click" data-event-name="FAQs"> Will I be charged any fee for booking cancellation? </a>
+                  <div class="content" style="display:none">
+                   <p>No, there is no fee for cancellation. Request a refund by writing to us at <a class="faqs-link" href="mailto:info@torkmotors.com">info@torkmotors.com</a> with your booking ID. Our team will initiate the refund process, and the entire booking amount will be refunded to your account within 15 days.</p>
+                  </div>
+                </div>
+                <div class="set s-3" id="s-3">
+                  <a href="javascript:;" class="panel" rel="s-3" data-event-category="Section" data-event-action="Click" data-event-name="FAQs"> What documents are required for the purchase of the bike? </a>
+                  <div class="content" style="display:none">
+                    <p>You need to upload 3 documents for verification post-booking on our website. Keep your PAN Card, Aadhar Card, and Electricity bill. Once we quickly verify your documents, our team will inform you about the next steps to get your hands on the Kratos.</p>
+                  </div>
+                </div>
+                <div class="set s-4" id="s-4">
+                  <a href="javascript:;" class="panel" rel="s-4" data-event-category="Section" data-event-action="Click" data-event-name="FAQs"> Can I still avail of the FAME-II subsidy to purchase the Kratos? </a>
+                  <div class="content" style="display:none">
+                    <p>FAME-II subsidy benefit, as approved by the department of heavy industries, Govt. of India, is available on purchasing an electric vehicle. When asked, just share the OTP you will receive from the RTO & MHI with a Tork Motors executive. We will take care of the subsidy.</p>
+                  </div>
+                </div>
+                <div class="set s-5" id="s-5">
+                  <a href="javascript:;" class="panel" rel="s-5" data-event-category="Section" data-event-action="Click" data-event-name="FAQs"> Do I have to pay extra for the Kratos charger and charger installation? </a>
+                  <div class="content" style="display:none">
+                    <p>No, you will not be charged extra for the charger and charger installation. Once you complete the purchase, we will contact you before the Kratos is delivered. Our team will install the Kratos charger in your designated parking spot.</p>
+                  </div>
+                </div>
+            </div>
+    </div>
+  </div>
+</section>
+<footer>
+ <div class="row">
+    <div class="col-12 lower">
+       
+    </div>
+ </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="dist/js/all.js"></script>
+   </body>
+</html>

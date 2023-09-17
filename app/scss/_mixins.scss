@@ -1,0 +1,20 @@
+//Breakpoints
+
+// sass maps
+//640px, 1024px, 1280px
+//breakpoint-up - above this breakpoint styles will apply
+//$breakpoints-up:("small": "64em","medium": "102.4em","large": "128em");
+//breakpoint-down - below this breakpoint styles will apply
+$breakpoints-down:("xx-small":"360px","x-small":"480px","small": "767px","medium": "1024px","medium-small": "990px","large": "1280px","x-large":"1366px");
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up, $size)){
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down, $size)){
+        @content;
+    }
+}

@@ -1,0 +1,25 @@
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes down-to-up {
+    100% {
+        top: 0%;
+    }
+}
+@keyframes up-to-down {
+    0% {
+        color: #fff;
+    }
+    100% {
+        top: 68%;
+        color: #000;
+    }
+}
