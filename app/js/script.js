@@ -51,16 +51,42 @@ pinOnly.forEach(function(element) {
   });
 });
 
-jQuery("#form1").submit(function(e) {
+
+jQuery("#form1").submit(function (e) {
   e.preventDefault();
-  jQuery("#form1").trigger('reset');
-  jQuery(".form-sub").css({
-    "margin-top": "15px",
-    "color": "green",
-    "font-size": "14px"
+  
+  var settings = {
+      "url": "https://pavankokane.tech/tork.php",
+      "method": "POST",
+      "timeout": 0,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "data": JSON.stringify({
+          "Name": jQuery("input[name='firstname']").val()+ " " + jQuery("input[name='lastname']").val(),
+          "Mobile": jQuery("input[name='mobileno']").val(),
+          "Email": jQuery("input[name='email']").val(),
+          "Address": jQuery("input[name='address']").val(),
+          "Pincode": jQuery("input[name='pincode']").val()
+      }),
+    };
+    
+  jQuery.ajax(settings).done(function (response) {
+      //console.log(response);
+      //console.log(response.success);
+      if (response.success == true) {
+        jQuery("#form1").trigger("reset");
+        jQuery(".form-sub").css({
+          "margin-top": "15px",
+          "color": "green",
+          "font-size": "14px"
+        });
+        jQuery(".form-sub").text("Form Submitted Successfully.");
+      }
   });
-  jQuery(".form-sub").text("Form Submitted Successfully.");
+
 });
+
 
 var slidecount = 0;
 

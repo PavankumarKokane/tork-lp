@@ -125,8 +125,8 @@
 		width: 100%;
 	}
 	.main-color-div {
-		bottom: unset;
-		top: 42%;
+		bottom: 50%;
+    	transform: translate(0, -50%);
 	}
 	.first-div-img-bk {
 		background-image: unset;
@@ -296,7 +296,8 @@
 		top: 10%;
 	}
 	.main-color-div {
-		top: 80%;
+		bottom: 40%;
+    	transform: translateY(-40%);
 	}
 	.img-zoom-box.first-img-box {
 		height: auto;
@@ -866,7 +867,8 @@ body {
 		display: block;
 	}
 	.main-color-div {
-		top: 60%;
+		bottom: 10%;
+    	transform: translateY(-10%);
 		left: 5%;
 		z-index: 1;
 	}
